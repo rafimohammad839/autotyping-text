@@ -1,0 +1,109 @@
+:root {
+  --header-bg: #020412;
+  --color-white: #fff; /* header color also */
+  --color-effect: #fff724; /* hover color, textbox color and textbox border color */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--header-bg);
+}
+
+.logo {
+  width: 110px;
+  cursor: pointer;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 2% 8.5%;
+}
+
+nav ul {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+nav ul li a:hover {
+  cursor: pointer;
+  color: var(--color-effect);
+}
+
+.menu {
+  width: 30px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.textbox {
+  color: var(--color-white);
+  line-height: 22px;
+  padding: 8.5%;
+}
+
+.textbox h1 {
+  font-size: 70px;
+  line-height: 110px;
+}
+
+.textbox a {
+  color: var(--color-effect);
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 5px;
+  border: 1px solid var(--color-effect);
+  margin: 20px 20px 0 0;
+  text-decoration: none;
+}
+
+.textbox .contact-me:hover {
+  background-color: var(--color-effect);
+  color: var(--header-bg);
+  transition: 0.3s ease;
+}
+
+.textbox .btn {
+  background-color: var(--color-effect);
+  color: var(--header-bg);
+  font-weight: 600;
+}
+
+.textbox .btn:hover {
+  background-color: #ddd72a;
+  transition: 0.3s ease;
+}
+
+.user-img {
+  width: 450px;
+  position: absolute;
+  right: 110px;
+  bottom: 0;
+}
+
+.auto-txt {
+  color: var(--color-effect);
+}
